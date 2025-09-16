@@ -1,9 +1,11 @@
+#utilizando a funçãon Remove 
+import os 
+arquivo_a_remover = "arquivo_a_remover.txt"
 try:
-    with open('dados1.txt', 'r') as arquivo:
-        conteudo = arquivo.read()
+    os.remove(arquivo_a_remover)
+    print(f"o arquivo{arquivo_a_remover} foi removido com sucesso.")
 except FileNotFoundError:
-    print("Arquivo não encontrado.")
-except PermissionError:
-    print("Permissão negada.")
-except Exception as e:
-    print(f"Erro inesperado: {e}")
+    print(f"o arquivo{arquivo_a_remover}não foui encontrado.")
+except Exception as e :
+    print(f"ocorreu um erro ao remover o arquivo :{e}")
+    
