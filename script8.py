@@ -1,5 +1,3 @@
-#Excluir uma tabela , e criar uma nova 
-
 import sqlite3 as conector
 
 # Abertura de conexão e aquisição de cursor

@@ -1,4 +1,3 @@
-#INSERÇÃO DE DADOS NO BD 
 import sqlite3 as conector
 
 # Abertura de conexão e aquisição de cursor
